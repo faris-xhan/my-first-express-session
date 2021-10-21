@@ -8,7 +8,6 @@
 }
 body {
    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-   background-color: whitesmoke;
 }
 
 .container {
@@ -111,4 +110,34 @@ button[type="submit"] {
 button[type="submit"]:hover,
 button[type="submit"]:active {
    background-color: rgb(194, 28, 61);
+}
+
+.cta a {
+   text-decoration: none;
+   margin: 0.1rem;
+}
+
+.cta .primary,
+.cta .secondary {
+   border: 1px solid rgba(61, 60, 60, 0.719);
+   padding: 5px 18px;
+   background-color: dodgerblue;
+   color: white;
+   border-radius: 1rem;
+   display: inline-block;
+   transition: all 150ms ease-in-out;
+}
+
+.cta .secondary {
+   background-color: transparent;
+   color: black;
+}
+
+.cta .secondary:hover {
+   background-color: dodgerblue;
+   color: white;
+}
+
+.cta .primary:hover {
+   background-color: rgb(14, 133, 252);
 }
