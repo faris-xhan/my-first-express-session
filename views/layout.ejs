@@ -1,12 +1,14 @@
 <html>
    <head>
-      <title>Express</title>
+      <title><%= title %></title>
       <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
       <link rel="stylesheet" href="/stylesheets/style.css" />
    </head>
 
    <body>
-      <h1>Welcome</h1>
-      <a href="/login">Login</a>
+      <div class="container">
+         <%- include('./partials/header') %>
+         <main><%- body %></main>
+      </div>
    </body>
 </html>
