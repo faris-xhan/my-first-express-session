@@ -5,6 +5,7 @@ const express = require("express");
 const expressEjsLayouts = require("express-ejs-layouts");
 const indexRouter = require("./routes/index");
 const loginRouter = require("./routes/login");
+const registerRouter = require("./routes/register");
 
 /* Create app */
 const app = express();
@@ -22,5 +23,6 @@ app.set("view engine", "ejs");
 /* Routes */
 app.use("/", indexRouter);
 app.use("/login", loginRouter);
+app.use("/register", registerRouter);
 
 module.exports = app;
