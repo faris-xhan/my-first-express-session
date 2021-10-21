@@ -1,11 +1,11 @@
 # My First Express Session
 
-A simple log in and registeration page to learn about express-session.
+A simple log in and registeration page.
 
 ## Description
 
 A log in and registeration page for user to log in and create account using express-session module.
-There is no database to save user. It is for studying purpose.
+There is no database to save user. I'm learning express-session.
 
 ## Getting Started
 
