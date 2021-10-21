@@ -104,4 +104,11 @@ button[type="submit"] {
    background-color: crimson;
    color: white;
    border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 230ms ease-in-out;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:active {
+   background-color: rgb(194, 28, 61);
 }
