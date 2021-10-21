@@ -141,3 +141,8 @@ button[type="submit"]:active {
 .cta .primary:hover {
    background-color: rgb(14, 133, 252);
 }
+
+.message {
+   text-align: left;
+   padding: 4px;
+}
