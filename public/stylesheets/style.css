@@ -24,8 +24,8 @@ a {
 header {
    display: flex;
    align-items: center;
-   background-color: aliceblue;
    padding: 1rem 2rem;
+   border-bottom: 1px solid black;
 }
 
 header .brand {
@@ -54,5 +54,49 @@ header ul li a:hover {
 
 main {
    padding: 1rem 2rem;
-   text-align: center;
+}
+
+.form-wrapper {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+form {
+   width: 100%;
+   max-width: 400px;
+   text-align: right;
+}
+form > h1 {
+   margin-bottom: 1rem;
+   text-align: left;
+}
+
+.form-item {
+   display: grid;
+   grid-template-columns: 1fr 3fr;
+   align-items: center;
+   margin-bottom: 1rem;
+}
+
+.form-item label,
+.form-item input {
+   text-align: left;
+   font-size: 1rem;
+   padding: 0 5px;
+}
+
+button[type="submit"] {
+   font-size: 1rem;
+   text-transform: uppercase;
+   padding: 6px 18px;
+   font-weight: bold;
+   letter-spacing: 0.02rem;
+   outline: none;
+   border: none;
+   background-color: crimson;
+   color: white;
+   border-radius: 5px;
 }
