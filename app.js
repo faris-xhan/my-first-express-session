@@ -5,7 +5,7 @@ const express = require("express");
 
 /* Routes Imports */
 const indexRouter = require("./routes/index");
-const usersRouter = require("./routes/users");
+const loginRouter = require("./routes/login");
 
 /* Create app */
 const app = express();
@@ -18,6 +18,6 @@ app.use(express.static(path.join(__dirname, "public")));
 
 /* Routes */
 app.use("/", indexRouter);
-app.use("/users", usersRouter);
+app.use("/login", loginRouter);
 
 module.exports = app;
